@@ -87,15 +87,29 @@ nav.nav {
 }
 
 .banner {
-  height: 400px;
-  background: url("banner.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../Images/favicon.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  color: var(--cor-texto-sobre-acao);
-  position: relative;
 }
+
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.banner-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
 
 .banner::after {
   content: "";
